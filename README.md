@@ -16,10 +16,10 @@ docker image build -t linkextractor:stage3 .
 docker container run -it --rm -p 5000:5000 linkextractor:stage3
 ```
 
-Open http://localhost:5000/api/http://odu.edu/ in a web browser or cURL from another terminal.
+Open <http://localhost:5000/api/http://odu.edu/> in a web browser or cURL from another terminal.
 
-```
-$ curl -i http://localhost:5000/api/http://example.com/
+```shell
+curl -i http://localhost:5000/api/http://example.com/
 ```
 
 Press `Ctrl + C` to terminate the service.
