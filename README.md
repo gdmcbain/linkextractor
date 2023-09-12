@@ -8,8 +8,8 @@ A basic page scraping script that prints out all the hyper references of the giv
 
 ## Try it out
 
-```
-$ docker image build -t linkextractor:step1 .
-$ docker container run -it --rm linkextractor:step1 http://example.com/
-$ docker container run -it --rm linkextractor:step1 http://odu.edu/
+```shell
+docker image build -t linkextractor:step1 .
+docker container run -it --rm linkextractor:step1 http://example.com/
+docker container run -it --rm linkextractor:step1 http://odu.edu/
 ```
