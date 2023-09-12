@@ -7,9 +7,11 @@ from linkextractor import extract_links
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index():
     return "Usage: http://<hostname>[:<prt>]/api/<url>"
+
 
 @app.route("/api/<path:url>")
 def api(url):
@@ -18,5 +20,6 @@ def api(url):
         url += "?" + qs
     links = extract_links(url)
     return jsonify(links)
+
 
 app.run(host="0.0.0.0")
