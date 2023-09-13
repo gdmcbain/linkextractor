@@ -22,4 +22,10 @@ Open <http://localhost:5000/api/http://odu.edu/> in a web browser or cURL from a
 curl -i http://localhost:5000/api/http://example.com/
 ```
 
+or
+
+```PowerShell
+Invoke-WebRequest -UseBasicParsing http://localhost:5000/api/http://example.com
+```
+
 Press `Ctrl + C` to terminate the service.
